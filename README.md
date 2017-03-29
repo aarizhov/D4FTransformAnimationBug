@@ -1,4 +1,4 @@
-# D4FTransformAnimationBug
+# Transform Animation Bug
 Represent so cold "Jumps at beginning" bug of the UIView animation. 
 Bug appered in the iOS 7 and still active (update: 03/29/2017 iOS 10.2.1 still active)
 
