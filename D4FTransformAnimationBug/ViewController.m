@@ -1,14 +1,14 @@
-# D4FTransformAnimationBug
-Represent so cold "Jumps at beginning" bug of the UIView animation. 
-Bug appered in the iOS 7 and still active (update: 03/29/2017 iOS 10.2.1 still active)
+//
+//  ViewController.m
+//  D4FTransformAnimationBug
+//
+//  Created by Artem Ryzhov on 3/29/17.
+//  Copyright © 2017 Artem Ryzhov. All rights reserved.
+//
 
-## Usage
+#import "ViewController.h"
 
-You can check how is UIView animation bug works and way for resolve this issue.
 
-### Example of bug
-
-```objective-c
 //UIView Animation Jumps at beginning bug.
 @interface ViewController (){
     UIView* _view;
@@ -39,11 +39,24 @@ You can check how is UIView animation bug works and way for resolve this issue.
         break;
     }
 }
-```
 
-### Example of resolve
+/*
+//UIView Animation Resolve
+@interface ViewController ()
+{
+    UIView* _view;
+}
+@end
 
-```objective-c
+@implementation ViewController
+
+- (void)viewDidLoad {
+    [super viewDidLoad];
+    _view = [[UIView alloc] initWithFrame:CGRectMake(-50, -50, 100, 100)];
+    _view.backgroundColor = [UIColor blackColor];
+    [self.view addSubview:_view];
+}
+
 - (void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event
 {
     static CGFloat angle = 0.0;
@@ -79,5 +92,5 @@ You can check how is UIView animation bug works and way for resolve this issue.
         break;
     }
 }
-
-```
+*/
+@end
